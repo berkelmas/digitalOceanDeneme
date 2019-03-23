@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'digitalOceanDeneme.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'denemedatabase',
+        'USER': 'denemedatabaseuser',
+        'PASSWORD': 'berk693693693',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
